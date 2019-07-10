@@ -120,16 +120,4 @@ public class LocaleUtilsTest {
 
     }
 
-
-    @Test
-    public void should_return_local_of_ISO3166_string_length_2() {
-        //given
-        testString = "BB";
-        //when
-        Locale res = localUtils.toLocale(testString);
-        //then
-        assertThat(res).isEqualTo(new Locale(testString));
-
-    }
-
 }
